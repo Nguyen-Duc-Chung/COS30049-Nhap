@@ -4,6 +4,7 @@ import { Container, Row, Col } from "reactstrap";
 import NftCard from '../components/ui/Nft-card/NftCard'
 import img from '../assets/images/img-01.jpg'
 import avatar from '../assets/images/ava-01.png'
+import '../styles/create-item.css'
 
 const item = {
     id: "04",
@@ -65,7 +66,13 @@ function Create() {
 
                             <div className="form__input">
                                 <label htmlFor="" > Description </label>
-                               <textarea name="" id="" cols="30" rows="10" placeholder="Enter description"></textarea>
+                               <textarea name="" 
+                                         id="" 
+                                         rows="10" 
+                                         placeholder="Enter description"
+                                         className="w-100">
+                                                 
+                                </textarea>
                             </div>
 
                         </form>

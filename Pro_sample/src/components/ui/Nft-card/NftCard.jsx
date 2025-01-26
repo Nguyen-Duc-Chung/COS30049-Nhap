@@ -13,42 +13,55 @@ function NftCard(props) {
     return (
         <>
          <div className="single__nft__card">
+
             <div className="nft__img">
                 <img src={imgUrl} alt="" className="w-100" />
             </div>
+
+
             <div className="nft__content">
+
                 <h5 className="nft__title">
                     <Link to={`/market/${id}`} >{title}</Link>
                 </h5>
+
                 <div className="creator__infor-wrapper d-flex gap-3 ">
+
                     <div className="creator__img">
                         <img src={creatorImg} alt="" className='w-100' />
                     </div>
-                        <div className="creator__infor w-100 d-flex align-items-center justify-content-between " >
-                            <div className='w-50' >
-                                <h6>Created By</h6>
-                                <p>{creator}</p>
-                            </div>
-                            <div  className='w-50'>
-                                <h6>Current Bid</h6>
-                                <p>{currentBid} ETH</p>
-                            </div>
+
+                    <div className="creator__infor w-100 d-flex align-items-center justify-content-between " >
+                        <div className='w-50' >
+                            <h6>Created By</h6>
+                            <p>{creator}</p>
                         </div>
+                        <div  className='w-50'>
+                            <h6>Current Bid</h6>
+                            <p>{currentBid} ETH</p>
+                        </div>
+                    </div>
+
                 </div>
-                <div className= " mt-3 d-flex align-items-center justify-content-between" >
+
+
+                <div className= " carCard__btn mt-3 d-flex align-items-center justify-content-between" >
                     <button className="bid__btn d-flex align-items-center gap-1 " onClick={()=>
-                        setShowModal(true)
-                    }>
+                            setShowModal(true)}>
                         <i class="ri-shopping-bag-line"></i> Place Bid
                     </button>
 
                     {showModal && <Modal setShowModal={setShowModal} /> }
 
-                    <span span="history__link" >
-                        <Link to=''>View History</Link>
-                    </span>
+                    <button className=" detail__btn " >
+                        <i class="ri-info-i"></i>
+                        <Link to={`/market/${id}`} >View Detail</Link>
+                    </button>
+
                 </div>
             </div>
+
+
          </div>
         </>)
 }

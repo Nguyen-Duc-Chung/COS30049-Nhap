@@ -17,7 +17,10 @@
     justify-content: space-between;
 }
 
+
 .nav__list{
+    padding: 0;
+    margin-top: 10px;
     display: flex;
     align-items: center;
     column-gap: 2.7rem;
@@ -26,6 +29,8 @@
 .nav__item a{
     text-decoration: none;
     color: #fff;
+    font-size: 1.2rem ;
+    
 }
 
 .nav__item a:hover{
@@ -72,7 +77,7 @@
     
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 990px){
 
     .nav__menu{
         position: fixed;
@@ -100,6 +105,10 @@
         flex-direction: column;
         padding-top: 40px;
         line-height: 40px;
+    }
+
+    .nav__right{
+        gap: 2rem;
     }
 
     .nav__right span.mobile__menu i {

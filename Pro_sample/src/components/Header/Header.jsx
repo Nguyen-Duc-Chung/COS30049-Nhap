@@ -18,7 +18,7 @@ const NAV__LINKS = [
     },
     {
         display:'Contact',
-        url:'/contact',
+        url:'/contact', 
     },
 ]
 
@@ -29,44 +29,46 @@ function Header(){
 
     return(
         <>
-        <header className="header"  >
+        <header className="header d-flex align-items-center  " >
             <Container>
-                <div className="navigation">
+                <div className="navigation ">
+
                     <div className="logo">
                         <h2 className=" d-flex gap-2 align-items-center">
                             <span>
-                                <i class="ri-fire-fill"></i>
+                                <i class="ri-car-fill"></i>
                             </span>
-                            NFT
+                            HorsePower
                         </h2>
                     </div>
                     
                     <div className="nav__menu" ref={menuRef} onClick={toggleMenu} >
                         <ul className="nav__list">
-                        {
-                            NAV__LINKS.map((item, index)=>(
-                            <li className="nav__item" key={index}>
-                                <NavLink to={item.url}
-                                         className= { navClass => navClass.isActive ? 'active' : '' } > 
-                              { item.display} </NavLink>
-                            </li>
-                            ))
-                        }
+                            {
+                                NAV__LINKS.map((item, index)=>(
+                                <li className="nav__item" key={index}>
+                                    <NavLink to={item.url}
+                                            className= { navClass => navClass.isActive ? 'active' : '' } > 
+                                { item.display} </NavLink>
+                                </li>
+                                ))
+                            }
                         </ul>
                     </div>
 
-                    <div className="nav__right d-flex align-items-center gap-5 " >
+                    <div className="nav__right d-flex align-items-center  " >
                         <button className="btn d-flex gap-2 align-items-center ">
-                         <span>
-                           <i class="ri-wallet-line"></i>
-                         </span>
-                             <Link to='/wallet' > Connect Wallet </Link>
+                            <span>
+                                <i class="ri-wallet-line"></i>
+                            </span>
+                            <Link to='/wallet' > Connect Wallet </Link>
                         </button>
 
                         <span className="mobile__menu">
                             <i class="ri-menu-line" onClick={toggleMenu}></i>
                         </span>
                     </div>
+
                 </div>
             </Container>
 

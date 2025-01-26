@@ -13,18 +13,22 @@ function HeroSection(){
                 <Row>
                     <Col lg='6' md='6' >
                         <div className="hero__content">
-                            <h2> Discover rare digital art and collect <span>Sell </span>
-                                NFT  </h2>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                            <h2>
+                                 BUY and SELL your car Quickly and Trusted with <span>Hoursepower </span>
+                            </h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                                 Alias molestias quos adipisci, libero cum magnam facilis quam eius, sequi aliquam, 
                             </p>
                             <div className="hero__btns d-flex align-items-center gap-4 ">
 
                                 <button clasName=" explore__btn d-flex align-items-center gap-2" >
-                                    <Link to='/market'>Explore</Link>
+                                    <i class="ri-shopping-cart-line"></i>{" "}
+                                    <Link to='/market'>Market</Link>
                                 </button>
                                 <button clasName=" create__btn d-flex align-items-center gap-2"  >
-                                    <Link to='/create'>Explore</Link>
+                                    <i class="ri-ball-pen-line"></i>{" "}
+                                    <Link to='/create'>Create</Link>
                                 </button>
                             </div>
                         </div>

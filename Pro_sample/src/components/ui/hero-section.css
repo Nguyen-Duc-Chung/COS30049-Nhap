@@ -22,20 +22,29 @@
     margin-top: 30px;
 }
 
- .explore__btn, 
- .create__btn{
+ .hero__btns button {
     border: none;
     outline: none;
     padding: 7px 25px !important;
-    border: 50px !important;
+    border-radius: 50px !important;
     border: 1px solid #5142FC !important;
     font-size: 0.9rem;
     background: transparent;
+    transition: 0.3s;
 }
 
-.explore__btn a,
-.create__btn a {
+.hero__btns button i{
+    color: #fff;
+    font-size: 1rem;
+}
+
+.hero__btns button a {
     text-decoration: none;
+    color: #fff;
+}
+
+.hero__btns button:hover{
+    background:#5142FC ;
     color: #fff;
 }
 
