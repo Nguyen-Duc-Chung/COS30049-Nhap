@@ -43,11 +43,10 @@ function Market() {
          <CommonSection title={"MarketPlace"} />
           
           <section>
-            <Container>
-                <Row>
-                    <Col lg='12' className='mb-5'>
-                        <div className="market__product__filter d-flex align-items-center 
-                        justify-content-between ">
+            <Container className='mainCon'>
+                <Row className='mainRow' >
+                    <Col lg='12' className=' mainCol mb-5'>
+                        <div className="market__product__filter d-flex align-items-center  justify-content-around ">
                             <div className="filter__left  d-flex align-items-center gap-5 ">
                                 <div className="all__category__filter">
                                     <select onChange={handleCategory} >
@@ -60,7 +59,6 @@ function Market() {
                                     </select>
                                 </div>
 
-
                                 <div className="all__items__filter">
                                     <select onChange={handleItems} >
                                         <option>All Items</option>
@@ -71,7 +69,6 @@ function Market() {
                             </div>
 
                             <div className="filter__right">
-                                   
                                     <select onChange={handleSort} >
                                         <option> Sort By </option>
                                         <option value="high"> High rate </option>

@@ -17,8 +17,8 @@ const NAV__LINKS = [
         url:'/create',
     },
     {
-        display:'Contact',
-        url:'/contact', 
+        display:'Transaction History',
+        url:'/transaction-history', 
     },
 ]
 

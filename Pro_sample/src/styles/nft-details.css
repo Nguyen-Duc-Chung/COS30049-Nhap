@@ -1,34 +1,18 @@
 
-.single__nft__content h2{
-    color: #fff;
-    
-}
-
+/*/////////////////////////////////////////////////////////*/
 .single__nft-img{
     border-radius: 8px;
 }
 
-.single__nft-seen span i{
-    color: #fff;
-    padding: 5px;
-    background: #000;
-    border-radius: 50px;
-    cursor: pointer;
+/*/////////////////////////////////////////////////////////*/
+.single__nft__content h2{
+    color: #fff;  
 }
 
-.single__nft-seen span ,
-.single__nft-more span {
-    color: #fff;
-}
-
-.single__nft-more span i {
-    background: #343444;
-    padding: 5px;
-    cursor: pointer;
-    border-radius: 50px;
-}
+/*/////////////////////////////////////////////////////////*/
 
 .nft__creator{
+    margin-top:1rem;
     background: #343444;
     padding: 20px;
     border-radius: 7px;
@@ -53,6 +37,38 @@
     font-size: 0.9rem;
     font-weight: 500;
 }
+
+/*/////////////////////////////////////////////////////////*/
+
+.nft__spec{
+    color: #fff;
+}
+
+.nft__price ,.category, .cre_date{
+    margin-top: 10px;
+}
+
+.nft__price{
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.nft__price span{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.category, .cre_date{
+    font-size: 1.1rem;
+    font-weight: 100;
+}
+
+.category span, .cre_date span{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/*/////////////////////////////////////////////////////////*/ 
 
 .singleNft-btn {
     padding: 8px 25px;
@@ -104,6 +120,30 @@
 
     .singleNft-btn a{
         font-size: 0.7rem;
+    }
+
+    .nft__price ,.category, .cre_date{
+        margin-top: 5px;
+    }
+
+    .nft__price{
+        font-size: 1.6rem;
+        font-weight: 100;
+    }
+
+    .nft__price span{
+        font-size: 1.9rem;
+        font-weight: 500;
+    }
+
+    .category, .cre_date{
+        font-size: 0.9rem;
+        font-weight: 100;
+    }
+
+    .category span, .cre_date span{
+        font-size: 1.2rem;
+        font-weight: 500;
     }
 }
 
